@@ -1,0 +1,17 @@
+PWD /Users/yutaka/Dropbox/assurance-book/assurance_book_tex
+INPUT /usr/local/texlive/2022/texmf.cnf
+INPUT /usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT safety_assurance.tex
+OUTPUT safety_assurance.log
+INPUT ./corona-a5.cls
+INPUT ./corona-a5.cls
+INPUT corona-a5.cls
+INPUT ./corona-a5.cls
+INPUT ./corona-a5.cls
+INPUT ./corona-a5.cls
+INPUT ./corona-a5.cls
+INPUT ./corona-a5.cls
+INPUT corona-a5.cls
+INPUT ./corona-a5.cls
+INPUT corona-a5.cls

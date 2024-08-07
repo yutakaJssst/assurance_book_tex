@@ -1,0 +1,63 @@
+\begin{Answer}
+
+\setcounter{ANSchapter}{1}
+\answer
+\begin{enumerate}
+\item
+以下に，章末問題解答に図表，数式が入る例を示します。
+\begin{eqnarray}
+ I_x & \= & I_0e^{-x/\delta} \notag \\
+     & \= & a + b + c + d + e + f + g \notag \\
+     & \leq & a + b + c + d + e + f + g \\
+     & \geq & \Frac{1+2+3+4+5+6}{\sin\frac{\theta}{\alpha +\beta}}
+\label{eqS.1}
+\end{eqnarray}
+
+\noindent
+このように，章末問題解答で数式を書いた場合，式番は式\ref{eqS.1}のようになります。
+図表を挿入した場合，図番は以下のように\FIGref{figS.4}となります。
+表についても同様に，表番は\TABref{tabS.1}のように表記されます。
+
+\begin{figure}[h]
+\hfil
+\includegraphics{square.eps}
+\caption{これは章末問題解答内の図面です}
+\label{figS.4}
+\end{figure}
+
+\begin{table}[h]\let\footnote\footnote
+\begin{center}
+\caption{表の例}
+\label{tabS.1}
+\begin{tabular}{l|l|r}
+\Hline
+項目1 & 項目2 & 項目3\\
+\hline
+a & A & 1\\
+ab & AB & 12\\
+abc & ABC & 123\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\noindent
+ここで，本文で式番を引用する場合は「式」の文字を手入力する必要がありますが，図表については\verb|\ref|で解図，解表の文字も自動的に表記されます。
+なお，式番を本文中で引用する場合，\ref{eqS.1}式のようにはせず，必ず式\ref{eqS.1}とします。
+
+\newpage
+\item
+これは，入れ子になった問題解答の例です。
+\begin{enumerate}
+\item
+章末問題を作成する環境はenumerate環境を利用してい
+ますので，各問題は``\verb@\item@''で始めて下さい。
+
+\item
+``\verb@\label@''および``\verb@\ref@''コマンドを使えば
+\ref{CORONAex1}のように括弧付きで引用できます。
+\end{enumerate}
+\end{enumerate}
+
+
+\end{Answer}

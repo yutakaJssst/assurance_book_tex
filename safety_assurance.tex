@@ -1,0 +1,34 @@
+\documentclass[a5paper,papersize]{corona-a5}
+
+\usepackage{graphicx}
+%\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{type1cm}
+\usepackage{multicol}
+\usepackage{makeidx}
+
+\newcommand{\AmSLaTeX}{\leavevmode\hbox{$\mathcal A\kern-.2em\lower.376ex%
+        \hbox{$\mathcal M$}\kern-.2em\mathcal S$-\LaTeX}}
+\newcommand{\sibun}{\hspace{0.25zw}}
+
+%\makeindex
+\begin{document}
+
+%\tableofcontents
+\input{safety_assurance_contents/preface}
+\newpage
+\mbox{}\thispagestyle{empty}
+\clearpage
+
+\input{safety_assurance_contents/chapter01}
+\input{safety_assurance_contents/chapter02}
+\input{safety_assurance_contents/chapter03}
+\input{safety_assurance_contents/chapter04}
+\input{safety_assurance_contents/chapter05}
+%\input{safety_assurance_contents/chapter06}
+%\input{safety_assurance_contents/appendix}
+%\input{safety_assurance_contents/bibliography.tex}
+%\input{safety_assurance_contents/answer.tex}
+
+\printindex
+\end{document}

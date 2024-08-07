@@ -1,0 +1,161 @@
+\begin{Appendix}
+\label{Appendix}
+
+\section{図を横に並べる}
+\label{secA.1}
+\subsection{付録内の項タイトル}
+\label{secA11}
+以下のようにすることで，図面を横に並べることができます。
+
+\begin{quote}
+\begin{verbatim}
+\begin{figure}[h]
+\begin{Hfloat}
+\hfil
+\begin{tabular}{ccc}
+\includegraphics{square.eps} &
+\hspace{10mm} &
+\includegraphics{square.eps} \\
+\caption{1個目の図} &
+\hspace{10mm} &
+\caption{2個目の図}
+\end{tabular}
+\end{Hfloat}
+\end{figure}
+\end{verbatim}
+\end{quote}
+
+\noindent
+figure環境の中を\verb|Hfloat|という環境で括り，例のように\verb|tabular|環境を併用することで，横に並んだ図説を通常に表示させることができます。
+\verb|\caption{}|の後に\verb|\label{}|を追加することで，\FIGref{figA.1}，
+\FIGref{figA.2}のように問題なくラベル参照することができます。
+
+\begin{figure}[tbhp]
+\begin{Hfloat}
+\hfil
+\begin{tabular}{ccc}
+\includegraphics{square.eps} &
+\hspace{8mm} &
+\includegraphics{square.eps} \\
+\caption{1個目の図}\label{figA.1} &
+\hspace{8mm} &
+\caption{2個目の図}\label{figA.2}
+\end{tabular}
+\end{Hfloat}
+\end{figure}
+
+tabularのオプションにcを追加することで横に並べる図面数を増やすことができ，
+また，この例のように図面と図面の間のあきを調整することもできます。
+\verb|\hfil|を入れることで全体を中央にそろえています。
+
+しかし，残念ながらこの方法では\verb|\caption|のオプションを使用できないという問題があります。
+図説が長い場合は，図説の頭位置が必ずそろってしまう問題はありますが，以下のように
+minipage環境を使用することで，対処できます。
+
+\begin{quote}
+\begin{verbatim}
+\begin{figure}[h]
+\begin{Hfloat}
+\hfil
+\begin{tabular}{ccc}
+\includegraphics{square.eps} &
+\hspace{6mm} &
+\includegraphics{square.eps} \\
+\caption{
+\protect\begin{minipage}[t]{28mm}
+□□□□□□□□□□□□□□□□□□□
+\protect\end{minipage}
+} \label{fig3-1} &
+\hspace{6mm} &
+\caption{
+\protect\begin{minipage}[t]{28mm}
+□□□□□□□□□□□□□□□□□□□□□□
+\protect\end{minipage}
+} \label{fig3-2}
+\end{tabular}
+\end{Hfloat}
+\end{figure}
+\end{verbatim}
+\end{quote}
+
+この出力例は，\ref{sec341}項の\ref{sec3412}にあります。
+
+図面と表を並べる場合については，
+図説，表説の前で，\verb|\def\@captype{table}|，\verb|\def\@captype{figure}|として（実際には，\verb|\makeatletter\def\@captype| \\ \verb|{figure}\makeatother|のようにする必要があります），図説を表説に，表説を図説にすることで実現可能ですが，コロナ社の規則では，図説は図面の下，表説は表の上と決まっているため，この方法ではうまく並べることができません。
+
+表を並べる場合については，\ref{sec342}項を参照して下さい。
+
+サブキャプションがある場合は，前の例で使用した\verb|\tabular|環境を使用することで対応できます。ただし，以下のように手打ちになります。また参照する場合も，
+(a)，(b)の部分だけ\FIGref{figA.3}\sibun (a)，\ref{figA.3}\sibun (b)のように手打ちする必要があります。
+
+\begin{quote}
+\begin{verbatim}
+\begin{figure}[h]
+\hfil
+\begin{tabular}{cc}
+\includegraphics{square.eps} &
+\includegraphics{square.eps} \\
+(a)\hspace{1zw}1個目の図 &
+(b)\hspace{1zw}2個目の図
+\end{tabular}
+\caption{サブキャプションのある例}
+\label{fig1.3}
+\end{figure}
+\end{verbatim}
+\end{quote}
+
+
+\section{付録内の数式・図表}
+\label{secA.2}
+以下に，付録に図表，数式が入る例を示します。
+\begin{eqnarray}
+ I_x & \= & I_0e^{-x/\delta} \notag \\
+     & \= & a + b + c + d + e + f + g \notag \\
+     & \leq & a + b + c + d + e + f + g \notag \\
+     & \geq & \Frac{1+2+3+4+5+6}{\sin\frac{\theta}{\alpha +\beta}}
+\label{eqA.1}
+\end{eqnarray}
+
+\noindent
+このように，付録で数式を書いた場合，式番は式\ref{eqA.1}のようになります。
+図表を挿入した場合，次頁のように図番は\ref{figA.3}，\ref{figA.4}となります。
+表についても同様に，表番は\ref{tabA.1}のように表記されます。
+
+ここで，本文で式番を引用する場合は「式」の文字を手入力する必要がありますが，図表については\verb|\ref|で図，表の文字も自動的に表記されます。
+なお，式番を本文中で引用する場合，\ref{eqA.1}式のようにはせず，必ず式\ref{eqA.1}として下さい。
+\begin{figure}[tbhp]
+\hfil
+\begin{tabular}{cc}
+\includegraphics{square.eps} &
+\includegraphics{square.eps} \\
+(a)\hspace{1zw}1個目の図 &
+(b)\hspace{1zw}2個目の図
+\end{tabular}
+\caption{サブキャプションのある例}
+\label{figA.3}
+\end{figure}
+
+\begin{figure}[tbhp]
+\hfil
+\includegraphics{square.eps}
+\caption{これは付録内の図面です}
+\label{figA.4}
+\end{figure}
+
+\begin{table}[tbhp]\let\footnote\footnote
+\begin{center}
+\caption{表の例}
+\label{tabA.1}
+\begin{tabular}{l|l|r}
+\Hline
+項目1 & 項目2 & 項目3\\
+\hline
+a & A & 1\\
+ab & AB & 12\\
+abc & ABC & 123\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\end{Appendix}
