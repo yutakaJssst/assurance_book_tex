@@ -1,8 +1,0 @@
-PWD /Users/yutaka/Documents/GitHub/assurance_book_tex
-INPUT /usr/local/texlive/2024/texmf.cnf
-INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
-INPUT /usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT safety_assurance.tex
-OUTPUT safety_assurance.log
-INPUT ./corona-a5.cls
-INPUT corona-a5.cls

@@ -1,0 +1,57 @@
+\BOOKMARK [0][-]{chapter.1}{イントロダクションイントロダクション}{}% 1
+\BOOKMARK [1][-]{section.1.1}{システムのディペンダビリティ：基礎概念と現代的課題システムのディペンダビリティ：基礎概念と現代的課題}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{システムとは何かシステムとは何か}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.2}{ディペンダビリティの概念ディペンダビリティの概念}{section.1.1}% 4
+\BOOKMARK [1][-]{section.1.2}{ディペンダビリティの体系と用語ディペンダビリティの体系と用語}{chapter.1}% 5
+\BOOKMARK [2][-]{subsection.1.2.1}{ディペンダビリティ属性ディペンダビリティ属性}{section.1.2}% 6
+\BOOKMARK [2][-]{subsection.1.2.2}{ディペンダビリティへの脅威ディペンダビリティへの脅威}{section.1.2}% 7
+\BOOKMARK [2][-]{subsection.1.2.3}{ディペンダビリティへの脅威に対処する手段ディペンダビリティへの脅威に対処する手段}{section.1.2}% 8
+\BOOKMARK [1][-]{section.1.3}{現代のシステムとディペンダビリティの課題現代のシステムとディペンダビリティの課題}{chapter.1}% 9
+\BOOKMARK [2][-]{subsection.1.3.1}{情報システムの規模拡大とネットワーク化情報システムの規模拡大とネットワーク化}{section.1.3}% 10
+\BOOKMARK [2][-]{subsection.1.3.2}{大規模なシステム障害のリスク大規模なシステム障害のリスク}{section.1.3}% 11
+\BOOKMARK [2][-]{subsection.1.3.3}{オープンシステム（開放系）の問題オープンシステム（開放系）の問題}{section.1.3}% 12
+\BOOKMARK [1][-]{section.1.4}{これからのディペンダビリティに向けてこれからのディペンダビリティに向けて}{chapter.1}% 13
+\BOOKMARK [2][-]{subsection.1.4.1}{不完全・不確実なシステムへの対応不完全・不確実なシステムへの対応}{section.1.4}% 14
+\BOOKMARK [2][-]{subsection.1.4.2}{システム保証（System Assurance）の重要性システム保証（System Assurance）の重要性}{section.1.4}% 15
+\BOOKMARK [2][-]{subsection.1.4.3}{説明責任の必要性の高まり説明責任の必要性の高まり}{section.1.4}% 16
+\BOOKMARK [2][-]{subsection.1.4.4}{AI技術とディペンダビリティAI技術とディペンダビリティ}{section.1.4}% 17
+\BOOKMARK [0][-]{chapter.2}{安全分析の基本手法: FTAとFMEA安全分析の基本手法: FTAとFMEA}{}% 18
+\BOOKMARK [1][-]{section.2.1}{未然防止の手法未然防止の手法}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.2}{FTAとFMEAFTAとFMEA}{chapter.2}% 20
+\BOOKMARK [1][-]{section.2.3}{FTA\(Fault Tree Analysis、故障の木解析\)FTA\(Fault Tree Analysis、故障の木解析\)}{chapter.2}% 21
+\BOOKMARK [2][-]{subsection.2.3.1}{FT図を読むFT図を読む}{section.2.3}% 22
+\BOOKMARK [2][-]{subsection.2.3.2}{FT図の作成FT図の作成}{section.2.3}% 23
+\BOOKMARK [1][-]{section.2.4}{FT図で定量的に解析するFT図で定量的に解析する}{chapter.2}% 24
+\BOOKMARK [1][-]{section.2.5}{FT図で定性的に解析するFT図で定性的に解析する}{chapter.2}% 25
+\BOOKMARK [2][-]{subsection.2.5.1}{最小カット集合を利用した方法最小カット集合を利用した方法}{section.2.5}% 26
+\BOOKMARK [2][-]{subsection.2.5.2}{構造重要度を利用した方法構造重要度を利用した方法}{section.2.5}% 27
+\BOOKMARK [1][-]{section.2.6}{FTA実施上の留意点FTA実施上の留意点}{chapter.2}% 28
+\BOOKMARK [0][-]{chapter.3}{安全分析手法STAMP/STPA安全分析手法STAMP/STPA}{}% 29
+\BOOKMARK [0][-]{chapter.4}{モデルベースシステムズエンジニアリングモデルベースシステムズエンジニアリング}{}% 30
+\BOOKMARK [0][-]{chapter.5}{アシュアランスケースとGSNアシュアランスケースとGSN}{}% 31
+\BOOKMARK [1][-]{section.5.1}{アシュアランスケースとはアシュアランスケースとは}{chapter.5}% 32
+\BOOKMARK [1][-]{section.5.2}{MISRA Safety Case GuidelineMISRA Safety Case Guideline}{chapter.5}% 33
+\BOOKMARK [1][-]{section.5.3}{セーフティケースの重要性セーフティケースの重要性}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.4}{D-Caseの概要と基本原則D-Caseの概要と基本原則}{chapter.5}% 35
+\BOOKMARK [2][-]{subsection.5.4.1}{D-CaseとはD-Caseとは}{section.5.4}% 36
+\BOOKMARK [1][-]{section.5.5}{D-Caseの目的: ミニマムの合意形成D-Caseの目的: ミニマムの合意形成}{chapter.5}% 37
+\BOOKMARK [2][-]{subsection.5.5.1}{D-Caseの基本的な考え方D-Caseの基本的な考え方}{section.5.5}% 38
+\BOOKMARK [1][-]{section.5.6}{GSN（Goal Structuring Notation）GSN（Goal Structuring Notation）}{chapter.5}% 39
+\BOOKMARK [2][-]{subsection.5.6.1}{GSNの概要GSNの概要}{section.5.6}% 40
+\BOOKMARK [1][-]{section.5.7}{GSNの基本要素GSNの基本要素}{chapter.5}% 41
+\BOOKMARK [2][-]{subsection.5.7.1}{GSNのノード接続ルールGSNのノード接続ルール}{section.5.7}% 42
+\BOOKMARK [2][-]{subsection.5.7.2}{GSNの作成例GSNの作成例}{section.5.7}% 43
+\BOOKMARK [1][-]{section.5.8}{D-CaseステップD-Caseステップ}{chapter.5}% 44
+\BOOKMARK [2][-]{subsection.5.8.1}{D-Caseステップの概要D-Caseステップの概要}{section.5.8}% 45
+\BOOKMARK [2][-]{subsection.5.8.2}{ステップ1：ステークホルダの設定ステップ1：ステークホルダの設定}{section.5.8}% 46
+\BOOKMARK [2][-]{subsection.5.8.3}{ステップ2：D-Caseの記述ステップ2：D-Caseの記述}{section.5.8}% 47
+\BOOKMARK [2][-]{subsection.5.8.4}{ステップ3：合意形成の実施ステップ3：合意形成の実施}{section.5.8}% 48
+\BOOKMARK [2][-]{subsection.5.8.5}{D-Caseの評価基準D-Caseの評価基準}{section.5.8}% 49
+\BOOKMARK [1][-]{section.5.9}{事例紹介：自動運転システム事例紹介：自動運転システム}{chapter.5}% 50
+\BOOKMARK [2][-]{subsection.5.9.1}{レベル4自動運転システムの事例レベル4自動運転システムの事例}{section.5.9}% 51
+\BOOKMARK [2][-]{subsection.5.9.2}{継続的アシュアランスの重要性継続的アシュアランスの重要性}{section.5.9}% 52
+\BOOKMARK [2][-]{subsection.5.9.3}{アシュアランスケースのトップレベル構造アシュアランスケースのトップレベル構造}{section.5.9}% 53
+\BOOKMARK [2][-]{subsection.5.9.4}{特定のユースケースの妥当性検証特定のユースケースの妥当性検証}{section.5.9}% 54
+\BOOKMARK [1][-]{section.5.10}{まとめまとめ}{chapter.5}% 55
+\BOOKMARK [0][-]{chapter.6}{総合演習総合演習}{}% 56
+\BOOKMARK [0][-]{chapter.7}{まとめまとめ}{}% 57
