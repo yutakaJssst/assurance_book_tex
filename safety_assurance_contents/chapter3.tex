@@ -1,3 +1,189 @@
 \chapter{安全分析手法STAMP/STPA}
 %岡本さん
 \label{chap3}
+
+\section{STAMP（System-Theoretic Accident Model and Processes）の概要}
+
+STAMP（System-Theoretic Accident Model and Processes）は、システム理論に基づく新しい事故モデルです。従来の事故モデルが主にコンポーネントの故障に焦点を当てているのに対し、STAMPはシステム全体の安全制約とその制御に注目します。
+
+\subsection{STAMPの基本概念}
+
+STAMPの基本要素は以下の3つです：
+
+\begin{itemize}
+    \item 安全制約：安全が守られるために必要なルール
+    \item プロセスモデル：コントローラが持つコントロール対象のモデル
+    \item コントロールストラクチャ：コンポーネント間の機能動作を示したシステムの設計図
+\end{itemize}
+
+STAMPでは、アクシデントを単純なイベントの連鎖ではなく、安全制約が適切に実施されなかった結果として捉えます。
+
+\section{STPA（System-Theoretic Process Analysis）}
+
+STPAは、STAMPに基づくハザード分析手法です。システムの設計段階や運用開始前に潜在的なハザードを特定し、安全制約を導出するために使用されます。
+
+\subsection{STPAの手順}
+
+STPAは以下の4つのステップで構成されます：
+
+\begin{enumerate}
+    \item 分析目的の定義
+    \item 制御構造図のモデル化
+    \item 非安全制御動作の識別
+    \item ロスシナリオの識別
+\end{enumerate}
+
+\subsection{Step 1: 分析目的の定義}
+
+この段階では、以下を定義します：
+
+\begin{itemize}
+    \item システム境界
+    \item ロス（アクシデント）
+    \item システムレベルのハザード
+    \item システムレベルの安全制約
+\end{itemize}
+
+\subsection{Step 2: 制御構造図のモデル化}
+
+制御構造図は、システム内のコンポーネント間の制御関係とフィードバック関係を示す図です。この図は以下の要素で構成されます：
+
+\begin{itemize}
+    \item コントローラ
+    \item 制御対象プロセス
+    \item 制御アクション
+    \item フィードバック
+\end{itemize}
+
+\subsection{Step 3: 非安全制御動作の識別}
+
+非安全制御動作（UCA: Unsafe Control Action）は、特定のコンテキストと最悪の環境の下で、ハザードを引き起こす可能性のある制御動作です。UCAは以下の4つのタイプに分類されます：
+
+\begin{enumerate}
+    \item 与えられないとハザード
+    \item 与えられるとハザード
+    \item 早すぎ、遅すぎ、誤順序でハザード
+    \item 早すぎる停止、長すぎる適用でハザード
+\end{enumerate}
+
+\subsection{Step 4: ロスシナリオの識別}
+
+ロスシナリオは、UCA（ひいてはハザード）へ至る要因を記述したシナリオです。この段階では、以下の2種類のシナリオを識別します：
+
+\begin{itemize}
+    \item UCAへ至るシナリオ
+    \item 制御動作の不実行・不適切な実行を表すシナリオ
+\end{itemize}
+
+\section{CAST（Causal Analysis based on System Theory）}
+
+CASTは、STAMPに基づく事故分析手法です。実際に発生したアクシデントのシナリオを識別し、システムの安全制御構造がなぜ機能しなかったかを分析します。
+
+\subsection{CASTの目的}
+
+CASTの主な目的は以下の通りです：
+
+\begin{itemize}
+    \item 事故調査の際に問われるべき質問を特定する
+    \item 事故がなぜ起こったのかを明らかにする
+    \item 責任の所在を明らかにするのではなく、システムの改善点を見出す
+\end{itemize}
+
+\subsection{CASTの手順}
+
+CASTは以下の手順で実施されます：
+
+\begin{enumerate}
+    \item 基本情報の収集
+    \item 安全コントロールストラクチャーのモデル化
+    \item 損失における各コンポーネントの分析
+    \item コントロールストラクチャーの欠陥の識別
+    \item 改善プログラムの作成
+\end{enumerate}
+
+\section{事例研究: 自動運転システムへのSTPAの適用}
+
+ここでは、自動運転システムにSTPAを適用する例を示します。
+
+\subsection{Step 1: 分析目的の定義}
+
+\begin{itemize}
+    \item ロス: 人命の損失、車両の損傷
+    \item ハザード: 自車両と他の物体（車両、歩行者、障害物など）との距離が安全距離未満になる
+    \item 安全制約: 自車両は常に他の物体との安全距離を維持しなければならない
+\end{itemize}
+
+\subsection{Step 2: 制御構造図のモデル化}
+
+% ここに制御構造図を挿入
+\textcolor{red}{[自動運転システムの制御構造図を挿入]}
+
+\subsection{Step 3: 非安全制御動作の識別}
+
+UCAの例：
+\begin{itemize}
+    \item UCA1: 前方に障害物があるにもかかわらず、自動運転システムがブレーキを適用しない
+    \item UCA2: 安全な状況下で自動運転システムが不必要にブレーキを適用する
+\end{itemize}
+
+\subsection{Step 4: ロスシナリオの識別}
+
+ロスシナリオの例：
+\begin{itemize}
+    \item LS1: センサーの故障により、自動運転システムが前方の障害物を検知できず、ブレーキを適用しない
+    \item LS2: ソフトウェアのバグにより、自動運転システムが安全な状況を危険と誤認識し、不必要にブレーキを適用する
+\end{itemize}
+
+\section{事例研究: 鉄道システム事故へのCASTの適用}
+
+ここでは、実際の鉄道システム事故にCASTを適用する例を示します。
+
+\subsection{事故概要}
+
+2019年6月1日、横浜シーサイドラインの無人自動運転列車が逆走し、終端の車止めに衝突した事故を分析します。
+
+\subsection{基本情報の収集}
+
+\begin{itemize}
+    \item 事故日時: 2019年6月1日 20時15分頃
+    \item 場所: 新杉田駅
+    \item 結果: 乗客25名中17名が負傷
+    \item システム: 自動列車運転システム（ATO）、自動列車制御システム（ATC）
+\end{itemize}
+
+\subsection{安全コントロールストラクチャーのモデル化}
+
+% ここに安全コントロールストラクチャーの図を挿入
+\textcolor{red}{[鉄道システムの安全コントロールストラクチャー図を挿入]}
+
+\subsection{各コンポーネントの分析}
+
+例: ATOシステムの分析
+\begin{itemize}
+    \item 責任: 列車の自動運転制御
+    \item 不適切な制御行動: 逆方向への出発指示
+    \item 誤ったプロセスモデル: 正しい進行方向の認識の欠如
+    \item コンテキスト: システムの設計上の欠陥
+\end{itemize}
+
+\subsection{改善提案}
+
+\begin{itemize}
+    \item ATOシステムの進行方向認識機能の強化
+    \item ATCシステムによる逆走検知機能の改善
+    \item 人間のオペレーターによるバックアップ体制の強化
+\end{itemize}
+
+\section{まとめ}
+
+STAMP/STPA及びCASTは、現代の複雑なシステムの安全性分析に適した手法です。これらの手法を用いることで、以下のような利点が得られます：
+
+\begin{itemize}
+    \item システム全体の安全性を包括的に分析できる
+    \item 人間要因を含むシステムの相互作用を考慮できる
+    \item 事故の根本原因だけでなく、システムの改善点を特定できる
+    \item 設計段階から運用段階まで、システムのライフサイクル全体にわたって適用できる
+\end{itemize}
+
+これらの手法を効果的に活用することで、より安全で信頼性の高いシステムの開発と運用が可能になります。
+
