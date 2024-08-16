@@ -1,26 +1,24 @@
-This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.euc) (TeX Live 2024) (preloaded format=platex 2024.8.15)  16 AUG 2024 08:58
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2023.3.3)  16 AUG 2024 10:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **safety_assurance.tex
 (./safety_assurance.tex
-pLaTeX2e <2023-02-14>+1, based on
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-02-20>
-(./corona-a5.cls
+pLaTeX2e <2023-02-14>+1 (based on LaTeX2e <2022-11-01> patch level 1)
+L3 programming layer <2023-02-22> (./corona-a5.cls
 Document Class: corona-a5 2005/9/09 v1.0 pLaTeX class ALL Rights reserved Copyr
 ight SANBI Co., Ltd. for CORONA PUBLISHING CO., Ltd.
-(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks18
+\KV@toks@=\toks17
 )
 \COFFEEbk@bxb=\box68
 \COFFEEbk@bxa=\box69
-\COFFEEbk@lcnt=\count187
+\COFFEEbk@lcnt=\count184
 \endCOFFEEskip=\skip48
-\c@COFFcount=\count188
-\c@@paper=\count189
+\c@COFFcount=\count185
+\c@@paper=\count186
 \h=\dimen156
 \JQ=\dimen157
 \Q=\dimen158
@@ -28,14 +26,14 @@ Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 711.
 \HASIRAdimen=\dimen160
-\@BUNRUI=\count190
-\c@part=\count191
-\c@chapter=\count192
-\c@section=\count193
-\c@subsection=\count194
-\c@subsubsection=\count195
-\c@paragraph=\count196
-\c@subparagraph=\count197
+\@BUNRUI=\count187
+\c@part=\count188
+\c@chapter=\count189
+\c@section=\count190
+\c@subsection=\count191
+\c@subsubsection=\count192
+\c@paragraph=\count193
+\c@subparagraph=\count194
 \CHAPheight=\dimen161
 \CHAPht=\box70
 \CHAPwidth=\dimen162
@@ -46,60 +44,60 @@ LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 \SECTht=\dimen166
 \SECTwd=\dimen167
 \APPSCHAPheight=\dimen168
-\c@ANSchapter=\count198
-\c@ANSchapVAL=\count199
-\FIGNUMcnt=\count266
-\TABNUMcnt=\count267
-\c@figure=\count268
-\c@COFFfigure=\count269
-\c@table=\count270
-\c@COFFtable=\count271
+\c@ANSchapter=\count195
+\c@ANSchapVAL=\count196
+\FIGNUMcnt=\count197
+\TABNUMcnt=\count198
+\c@figure=\count199
+\c@COFFfigure=\count266
+\c@table=\count267
+\c@COFFtable=\count268
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \capwidth=\dimen169
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 8.13171pt on input line 3976.
 \ycapsep=\dimen170
-\c@Mparentequation=\count272
+\c@Mparentequation=\count269
 \mathindent=\dimen171
-\c@COFFequation=\count273
-\@COFFeqcnt=\count274
-\@COFFeqpen=\count275
+\c@COFFequation=\count270
+\@COFFeqcnt=\count271
+\@COFFeqpen=\count272
 \symmincho=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
 (Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 4624.
 \toclineskip=\dimen172
 \@lnumwidth=\dimen173
 \TOCCHAPdimen=\dimen174
-\@minsofar=\count276
-\@min=\count277
-\@cite@temp=\count278
+\@minsofar=\count273
+\@min=\count274
+\@cite@temp=\count275
 \bibindent=\dimen175
 \KARAsakuinbox=\box72
-\ftID=\count279
-\heisei=\count280
-\c@TEIRIcount=\count281
-\c@TEIGIcount=\count282
-\c@HODAIcount=\count283
-\c@REIDAIcount=\count284
-\c@REIcount=\count285
-\c@footnote@tab=\count286
+\ftID=\count276
+\heisei=\count277
+\c@TEIRIcount=\count278
+\c@TEIGIcount=\count279
+\c@HODAIcount=\count280
+\c@REIDAIcount=\count281
+\c@REIcount=\count282
+\c@footnote@tab=\count283
 )
-(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: dvips.def on input line 107.
 
-(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-def/dvips.def
+(/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-def/dvips.def
 File: dvips.def 2022/09/22 v3.1e Graphics/color driver for dvips
 ))
 \Gin@req@height=\dimen176
@@ -109,27 +107,27 @@ File: dvips.def 2022/09/22 v3.1e Graphics/color driver for dvips
 Package: amssymb 1996/11/03 v2.2b
  (./amsfonts.sty
 Package: amsfonts 1997/09/17 v2.2e
-\@emptytoks=\toks19
+\@emptytoks=\toks18
 \symAMSa=\mathgroup5
 \symAMSb=\mathgroup6
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 124.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 133.
 ))
-(/usr/local/texlive/2024/texmf-dist/tex/latex/type1cm/type1cm.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/type1cm/type1cm.sty
 Package: type1cm 2002/09/05 v0.04 BlueSky/Y&Y Type1 CM font definitions (DPC, p
 atched RF)
 )
 (./multicol.sty
 Package: multicol 1999/10/21 v1.5w multicolumn formatting (FMi)
-\c@tracingmulticols=\count287
+\c@tracingmulticols=\count284
 \mult@box=\box73
 \multicol@leftmargin=\dimen178
-\c@unbalance=\count288
-\c@collectmore=\count289
-\doublecol@number=\count290
-\multicoltolerance=\count291
-\multicolpretolerance=\count292
+\c@unbalance=\count285
+\c@collectmore=\count286
+\doublecol@number=\count287
+\multicoltolerance=\count288
+\multicolpretolerance=\count289
 \full@width=\dimen179
 \page@free=\dimen180
 \premulticols=\dimen181
@@ -159,24 +157,24 @@ Package: multicol 1999/10/21 v1.5w multicolumn formatting (FMi)
 \@tempa=\box94
 \@tempa=\box95
 \@tempa=\box96
-\c@columnbadness=\count293
-\c@finalcolumnbadness=\count294
+\c@columnbadness=\count290
+\c@finalcolumnbadness=\count291
 \last@try=\dimen183
 \multicolovershoot=\dimen184
 \multicolundershoot=\dimen185
 \mult@nat@firstbox=\box97
 \colbreak@box=\box98
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/base/makeidx.sty
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/base/makeidx.sty
 Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
-File: l3backend-dvips.def 2024-02-20 L3 backend support: dvips
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2023-01-16 L3 backend support: dvips
 \l__pdf_internal_box=\box99
-\g__pdf_backend_object_int=\count295
+\g__pdf_backend_object_int=\count292
 \l__pdf_backend_content_box=\box100
 \l__pdf_backend_model_box=\box101
-\g__pdf_backend_annotation_int=\count296
-\g__pdf_backend_link_int=\count297
-\g__pdf_backend_link_sf_int=\count298
+\g__pdf_backend_annotation_int=\count293
+\g__pdf_backend_link_int=\count294
+\g__pdf_backend_link_sf_int=\count295
 )
 
 LaTeX Warning: Unused global option(s):
@@ -203,7 +201,7 @@ LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
-\c@parentequation=\count299
+\c@parentequation=\count296
  (./safety_assurance_contents/preface.tex
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 17.74248pt on input line 1.
@@ -222,7 +220,7 @@ LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 ]) [2
 
 ]
-(./safety_assurance_contents/chapter01.tex
+(./safety_assurance_contents/chapter1.tex
 第 1 章
 LaTeX Font Info:    Font shape `JT1/mc/m/sl' in size <10> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
@@ -242,54 +240,60 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' will be
 (Font)              scaled to size 9.60999pt on input line 1.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
-) (./safety_assurance_contents/chapter02.tex [1
+) (./safety_assurance_contents/chapter2.tex [1
 
 
 ]
 第 2 章
-) (./safety_assurance_contents/chapter03.tex [2
+) (./safety_assurance_contents/chapter3.tex [2
 
 ]
 第 3 章
+) (./safety_assurance_contents/chapter4.tex [3
+
+]
+第 4 章
+) (./safety_assurance_contents/chapter5.tex [4
+
+]
+第 5 章
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <11.82813> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 7.39253pt on input line 6.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 5.914pt on input line 6.
-[3
+[5
 
-]) (./safety_assurance_contents/chapter04.tex
+]) (./safety_assurance_contents/chapter6.tex
 LaTeX Font Info:    Font shape `JT1/mc/m/sl' in size <9> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `JY1/mc/m/sl' in size <9> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
- [4]
-第 4 章
-) (./safety_assurance_contents/chapter05.tex [5
+ [6]
+第 6 章
+) (./safety_assurance_contents/chapter7.tex [7
 
 ]
-第 5 章
+第 7 章
 )
 No file safety_assurance.ind.
 >>>>>2005/9/09 v1.0 pLaTeX class ALL Rights reserved Copyright SANBI Co., Ltd. 
 for CORONA PUBLISHING CO., Ltd.<<<<<
-[6
+[8
 
 ] (./safety_assurance.aux)
- ***********
-pLaTeX2e <2023-02-14>+1, based on
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-02-20>
- ***********
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 2242 strings out of 474774
- 33684 string characters out of 5758801
- 1922032 words of memory out of 5000000
- 24612 multiletter control sequences out of 15000+600000
- 575149 words of font info for 114 fonts, out of 8000000 for 9000
+ 2263 strings out of 476707
+ 34391 string characters out of 5805612
+ 1846209 words of memory out of 5000000
+ 22714 multiletter control sequences out of 15000+600000
+ 529367 words of font info for 110 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 57i,9n,65p,826b,308s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 55i,9n,62p,825b,306s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on safety_assurance.dvi (8 pages, 6496 bytes).
+Output written on safety_assurance.dvi (10 pages, 6912 bytes).
