@@ -1,3 +1,249 @@
-\chapter{総合演習}
-%大村さん、岡田さん
+\chapter{総合演習：自動運転システムの信頼性分析}
 \label{chap6}
+
+本章では、これまでに学んだ知識を活用し、STAMP/STPA（System-Theoretic Process Analysis）を用いて自動運転システムの信頼性分析を行います。この演習を通じて、実際のシステム開発における安全性分析の手法を体験的に学びます。
+
+\section{演習の概要}
+
+\subsection{対象システム}
+自動運転車の事例：L4 自動車駐車誘導（L4 Car Park Pilot，L4 CPP）
+
+\subsection{想定シナリオ}
+自動運転車サービスを提供する会社を想定します。要求分析の結果、以下のような要求仕様が固まってきました：
+
+\begin{itemize}
+    \item なんらかの認証がなされた駐車場又は駐車エリア内において、無人での移動を行う。
+    \item 最大速度は10km/h。
+    \item 危険を検知したときのアクション：
+    \begin{enumerate}
+        \item 車速を徐行速度まで落とす。ただし、交差地点や合流箇所には進入しない。
+        \item 安全地帯で停止し、（もしいれば）遠隔オペレーター、又は、ドライバーに通知する。
+    \end{enumerate}
+\end{itemize}
+
+\subsection{目指す安全状態}
+\begin{enumerate}
+    \item 車両は徐行速度で運転され、衝突を回避している。
+    \item 安全な場所で停止し、セキュアな状態にある。遠隔オペレーター又はドライバーは情報を通知され、今後の対処について決定している。
+\end{enumerate}
+
+\section{システム要素の概要}
+
+本演習では、以下のようなシステム要素を考慮します：
+
+\subsection{Localization（位置推定のためのセンシングシステム）}
+駐車場内の駐車場所を特定するのに十分な精度を持つ。実装方法は、例えば、駐車場の地図情報と、人工的なランドマークを配置するなどの方法が考えられる。
+
+\subsection{Environmental Perception Sensor（物標検知のためのセンシングシステム）}
+前方などの障害物や他車両、歩行者、駐車場構造物、路上の標識やラインなどを検知する。必要に応じて駐車場との通信も可能。
+
+\subsection{Interpretation and Prediction（解釈と予測システム）}
+他車両や歩行者、その他障害物などの動きの意味を解釈し、未来の動きを予測する。
+
+\subsection{Driving Planning（運転計画システム）}
+走行経路を計画し、計画された走行経路に対し、走行路の条件や自車の幅、他の物標などの制限を考慮し、車両の縦方向及び横方向の運動に変換する。
+
+\subsection{ADS Mode Manager（自動運転モード管理システム）}
+自動運転モードの起動条件と解除条件をチェックする。縮退モードへの遷移も担う。
+
+\subsection{User State Determination（ユーザー状態決定システム）}
+ユーザー（任意の搭乗者）が運転機能の委譲を要求しているか検出する。
+
+\subsection{Monitors（監視システム）}
+長時間のオペレーションになる場合、電源又は燃料を監視する。
+
+\section{STAMP/STPAによる安全分析の手順}
+
+STAMP/STPAを用いた安全分析は、以下の手順で行います：
+
+\begin{enumerate}
+    \item 分析目的の定義
+    \begin{itemize}
+        \item ロス、アクシデント、ハザード、安全制約の識別
+    \end{itemize}
+    \item 制御構造図のモデル化
+    \item 非安全制御動作（UCA: Unsafe Control Action）の識別
+    \item ロスシナリオの識別
+\end{enumerate}
+
+\section{演習課題}
+
+以下の手順に従って、L4 自動車駐車誘導システムの安全分析を行ってください。
+
+\subsection{ロス（アクシデント）とハザードの識別}
+システムが引き起こす可能性のあるロス（アクシデント）とハザードを特定してください。
+
+\textbf{例：}
+\begin{itemize}
+    \item ロス：人身事故、車両損傷
+    \item ハザード：他の車両や歩行者との衝突、駐車場構造物との接触
+\end{itemize}
+
+\subsection{制御構造図のモデル化}
+システムの制御構造図を作成してください。各コンポーネント間の制御アクションと、フィードバック情報を明確に示してください。
+
+\subsection{非安全制御動作（UCA）の識別}
+各制御アクションに対して、以下の4つの類型に基づいてUCAを識別してください：
+
+\begin{enumerate}
+    \item 必要な制御アクションが与えられない
+    \item unsafe な制御アクションが与えられる
+    \item 制御アクションのタイミングまたは順序が適切でない（早すぎる、遅すぎる、正しくない順序）
+    \item 制御アクションの継続時間が不適切（停止が早すぎる、適用され過ぎる）
+\end{enumerate}
+
+\textbf{UCA表の例：}
+\begin{table}[h]
+\caption{UCA表の例}
+\begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
+\hline
+制御アクション & 与えない & 与える & タイミング/順序 \\
+\hline
+ブレーキ制御 & ブレーキを適用しない場合、衝突の危険がある & 不必要なブレーキにより後続車との衝突の危険がある & ブレーキが遅すぎると衝突の危険がある \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{ロスシナリオの識別}
+特定したUCAに対して、それがなぜ発生する可能性があるのかを分析し、ロスシナリオを作成してください。
+
+\textbf{ロスシナリオの例：}
+\begin{itemize}
+    \item センサーの故障により障害物を検知できず、ブレーキが適用されない。
+    \item ソフトウェアのバグにより、不適切なタイミングでブレーキが適用される。
+\end{itemize}
+
+\section{レポート作成}
+
+演習の結果を以下の構成でレポートにまとめてください：
+
+\begin{enumerate}
+    \item 分析の目的と対象システムの概要
+    \item 識別したロス、ハザード、安全制約
+    \item 制御構造図
+    \item 非安全制御動作（UCA）の一覧表
+    \item 主要なロスシナリオの詳細説明
+    \item 安全性向上のための推奨事項
+    \item 分析プロセスの振り返りと学んだこと
+\end{enumerate}
+
+この総合演習を通じて、STAMP/STPAを用いた実際のシステム安全分析の手法を体験し、自動運転システムの複雑さと安全性確保の重要性について理解を深めることができるでしょう。
+
+\section{MBSEによるアーキテクチャ設計}
+
+本節では、STAMP/STPAで作成したコントロールストラクチャーを利用し、安全なシステムを実現するために必要な機能の抽出を行います。
+
+\subsection{MBSEモデリングの手順}
+
+以下の手順に従って、MBSEモデルを作成します：
+
+\subsubsection{ステップ1: STAMP/STPAファイルとUAFテンプレートファイルのマージ}
+\begin{enumerate}
+    \item メニューの「ファイル」から「プロジェクトの比較とマージ」を選択
+    \item 対象ファイルとして「UAF\_empty\_template.axmz」を選択
+    \item マージ画面で「マージ」を選択（優先順位はデフォルトのまま）
+\end{enumerate}
+
+\subsubsection{ステップ2: STAMP/STPAモデルの再利用（準備1）}
+\begin{enumerate}
+    \item 構造ツリーからコントロールストラクチャーのコンポーネントを全て展開
+    \item Rs-Tx Resource Taxonomy(empty)を開き、図の名前をRs-Tx Resource Taxonomyに変更
+\end{enumerate}
+
+\subsubsection{ステップ3: STAMP/STPAモデルの再利用（準備2）}
+\begin{enumerate}
+    \item STAMP/STPAモデル内のコンポーネントを全て選択
+    \item 選択したコンポーネントをRs-Tx Resource Taxonomyの図上へドラッグ＆ドロップ
+\end{enumerate}
+
+\subsubsection{ステップ4: STAMP/STPAモデルの再利用（準備3）}
+UAFで用意されている概念を用いてモデルを整理します：
+\begin{itemize}
+    \item Post, Person $\leftarrow$ Personnel Viewにあります
+    \item System, Resource Artifact $\leftarrow$ Resource Viewにあります
+    \item Environment $\leftarrow$ Parametersにあります
+\end{itemize}
+
+\subsubsection{ステップ5: 振る舞いモデルの作成を通じた機能の抽出}
+\begin{enumerate}
+    \item Rs-Prのセルから「Create Rs-Pr diagram」を選択
+    \item STAMP/STPAで分析したシナリオの名前（例：「Rs-Pr 障害物発見時の振る舞い」）を付ける
+    \item パーティションを準備し、型を設定
+    \item 色分けを行い、シナリオに必要な機能を定義
+\end{enumerate}
+
+\subsection{MBSEモデリングの補足}
+\begin{itemize}
+    \item 今回は安全なシステムを実現するために必要な機能の抽出という目的のためにモデルを記述しました
+    \item 機能の抽出には、プロセスのモデルだけでなく、状態のモデルややりとりされる情報のモデルなども記述し、シミュレーションを通じて妥当性を確認する必要があります
+    \item 安全性以外の観点（戦略やオペレーションなど）もモデル化しながら最終的な機能を確定していきます
+    \item MBSEは、多くの観点から検討したソリューションが満足するものであることを客観的に説明するためのエビデンスを提供します
+\end{itemize}
+
+\section{アシュアランスケースによるシステム保証}
+
+本節では、アシュアランスケースを用いてシステムの安全性を保証する演習を行います。
+
+\subsection{演習1: ステークホルダーの分析}
+このシステムにどのようなステークホルダがいるか、挙げてみましょう。
+
+\subsection{演習2: 前提とトップゴールの設定}
+\begin{itemize}
+    \item 開発企業とシステムの安全性認証者（アセッサー）間の合意形成を想定します
+    \item 安全性に関するトップゴールを設定します
+    \item 必要十分な前提をトップゴールにつけます
+\end{itemize}
+
+\subsection{演習3: サブゴールへの分割}
+トップゴールの分割が最も重要です。以下のような分割方法を考えてみましょう：
+\begin{itemize}
+    \item システムの構造による分割
+    \item システムのプロセスによる分割
+    \item システムの要求による分割
+    \item システムのハザードによる分割
+\end{itemize}
+
+% ここにGSNの図を挿入する
+\textcolor{red}{[自動運転システムのGSNの図を挿入]}
+
+\section{まとめ}
+
+本講義では以下の内容を学びました：
+
+\begin{itemize}
+    \item 信頼性の概念
+    \begin{itemize}
+        \item ディペンダビリティ、安全性、セキュリティ、など
+    \end{itemize}
+    \item 安全性、セキュリティ分析手法
+    \begin{itemize}
+        \item FTA, FMEAなどの従来の安全分析手法
+        \item STAMP/STPAによる安全、セキュリティ分析
+    \end{itemize}
+    \item モデルベースシステムズエンジニアリング(MBSE)
+    \item アシュアランスケースによるシステム保証
+    \begin{itemize}
+        \item Goal Structuring Notation (GSN)
+        \item D-Case手法
+    \end{itemize}
+\end{itemize}
+
+\section{総合演習の課題2}
+
+以下の手順に従って、自動運転システムの安全性分析と保証を行ってください：
+
+\begin{enumerate}
+    \item STAMP/STPAを用いて自動運転システムの安全性分析を行う
+    \item 分析結果を基にMBSEモデルを作成し、必要な機能を抽出する
+    \item 抽出した機能と安全性要求を基にアシュアランスケース（GSN）を作成する
+    \item 作成したアシュアランスケースの妥当性を評価し、必要に応じて改善する
+    \item 一連のプロセスと結果をレポートにまとめる
+\end{enumerate}
+
+この総合演習を通じて、システムの安全性分析から保証までの一連のプロセスを体験し、実際のシステム開発における安全性確保の重要性と方法論について理解を深めることができるでしょう。
+
+
+
+
+
+
