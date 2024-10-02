@@ -2758,6 +2758,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\voidb@x' on input line 105.
+(hyperref)                removing `\voidb@x' on input line 105.
 
 [43]
 File: safety_assurance_contents/ch4images/fig3.png Graphic file (type bmp)
@@ -2838,9 +2839,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\box' on input line 168.
+(hyperref)                removing `\box' on input line 168.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\voidb@x' on input line 168.
 (hyperref)                removing `\voidb@x' on input line 168.
 
 [45]
@@ -3039,9 +3042,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\box' on input line 202.
+(hyperref)                removing `\box' on input line 202.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\voidb@x' on input line 202.
 (hyperref)                removing `\voidb@x' on input line 202.
 
 [46]
@@ -3240,9 +3245,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\box' on input line 229.
+(hyperref)                removing `\box' on input line 229.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\voidb@x' on input line 229.
 (hyperref)                removing `\voidb@x' on input line 229.
 
 [47]
@@ -6139,7 +6146,7 @@ Package rerunfilecheck Info: File `safety_assurance.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  10543 strings out of 476707
- 163438 string characters out of 5805612
+ 163438 string characters out of 5805611
  1855209 words of memory out of 5000000
  30831 multiletter control sequences out of 15000+600000
  531213 words of font info for 118 fonts, out of 8000000 for 9000
