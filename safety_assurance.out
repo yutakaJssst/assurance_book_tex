@@ -8,129 +8,127 @@
 \BOOKMARK [2][-]{subsection.1.2.3}{ディペンダビリティへの脅威に対処する手段ディペンダビリティへの脅威に対処する手段}{section.1.2}% 8
 \BOOKMARK [1][-]{section.1.3}{現代のシステムとディペンダビリティの課題現代のシステムとディペンダビリティの課題}{chapter.1}% 9
 \BOOKMARK [2][-]{subsection.1.3.1}{情報システムの規模拡大とネットワーク化情報システムの規模拡大とネットワーク化}{section.1.3}% 10
-\BOOKMARK [2][-]{subsection.1.3.2}{大規模なシステム障害のリスク大規模なシステム障害のリスク}{section.1.3}% 11
-\BOOKMARK [2][-]{subsection.1.3.3}{オープンシステム（開放系）の問題オープンシステム（開放系）の問題}{section.1.3}% 12
-\BOOKMARK [1][-]{section.1.4}{これからのディペンダビリティに向けてこれからのディペンダビリティに向けて}{chapter.1}% 13
-\BOOKMARK [2][-]{subsection.1.4.1}{不完全・不確実なシステムへの対応不完全・不確実なシステムへの対応}{section.1.4}% 14
-\BOOKMARK [2][-]{subsection.1.4.2}{システム保証（System Assurance）の重要性システム保証（System Assurance）の重要性}{section.1.4}% 15
-\BOOKMARK [2][-]{subsection.1.4.3}{説明責任の必要性の高まり説明責任の必要性の高まり}{section.1.4}% 16
-\BOOKMARK [2][-]{subsection.1.4.4}{AI技術とディペンダビリティAI技術とディペンダビリティ}{section.1.4}% 17
-\BOOKMARK [0][-]{chapter.2}{安全分析の基本手法: FTAとFMEA安全分析の基本手法: FTAとFMEA}{}% 18
-\BOOKMARK [1][-]{section.2.1}{未然防止の手法未然防止の手法}{chapter.2}% 19
-\BOOKMARK [1][-]{section.2.2}{FTAとFMEAFTAとFMEA}{chapter.2}% 20
-\BOOKMARK [1][-]{section.2.3}{FTA\(Fault Tree Analysis、故障の木解析\)FTA\(Fault Tree Analysis、故障の木解析\)}{chapter.2}% 21
-\BOOKMARK [2][-]{subsection.2.3.1}{FT図を読むFT図を読む}{section.2.3}% 22
-\BOOKMARK [2][-]{subsection.2.3.2}{FT図の作成FT図の作成}{section.2.3}% 23
-\BOOKMARK [1][-]{section.2.4}{FT図で定量的に解析するFT図で定量的に解析する}{chapter.2}% 24
-\BOOKMARK [1][-]{section.2.5}{FT図で定性的に解析するFT図で定性的に解析する}{chapter.2}% 25
-\BOOKMARK [2][-]{subsection.2.5.1}{最小カット集合を利用した方法最小カット集合を利用した方法}{section.2.5}% 26
-\BOOKMARK [2][-]{subsection.2.5.2}{構造重要度を利用した方法構造重要度を利用した方法}{section.2.5}% 27
-\BOOKMARK [1][-]{section.2.6}{FTA実施上の留意点FTA実施上の留意点}{chapter.2}% 28
-\BOOKMARK [0][-]{chapter.3}{安全分析手法STAMP/STPA安全分析手法STAMP/STPA}{}% 29
-\BOOKMARK [1][-]{section.3.1}{STAMPの概要STAMPの概要}{chapter.3}% 30
-\BOOKMARK [1][-]{section.3.2}{STPASTPA}{chapter.3}% 31
-\BOOKMARK [2][-]{subsection.3.2.1}{STPAの手順STPAの手順}{section.3.2}% 32
-\BOOKMARK [2][-]{subsection.3.2.2}{Step 1: 分析目的の定義Step 1: 分析目的の定義}{section.3.2}% 33
-\BOOKMARK [2][-]{subsection.3.2.3}{Step 2: 安全制御構造図のモデル化Step 2: 安全制御構造図のモデル化}{section.3.2}% 34
-\BOOKMARK [2][-]{subsection.3.2.4}{Step 3: 非安全制御動作の識別Step 3: 非安全制御動作の識別}{section.3.2}% 35
-\BOOKMARK [2][-]{subsection.3.2.5}{Step 4: ロスシナリオの識別Step 4: ロスシナリオの識別}{section.3.2}% 36
-\BOOKMARK [1][-]{section.3.3}{脅威分析手法 STPA-Sec脅威分析手法 STPA-Sec}{chapter.3}% 37
-\BOOKMARK [2][-]{subsection.3.3.1}{ウォーゲーム\(Wargaming\)ウォーゲーム\(Wargaming\)}{section.3.3}% 38
-\BOOKMARK [1][-]{section.3.4}{事例研究: 自動運転システムへのSTPAの適用事例研究: 自動運転システムへのSTPAの適用}{chapter.3}% 39
-\BOOKMARK [2][-]{subsection.3.4.1}{Step 1: 分析目的の定義Step 1: 分析目的の定義}{section.3.4}% 40
-\BOOKMARK [2][-]{subsection.3.4.2}{Step 2: 制御構造図のモデル化Step 2: 制御構造図のモデル化}{section.3.4}% 41
-\BOOKMARK [2][-]{subsection.3.4.3}{Step 3: 非安全制御動作の識別Step 3: 非安全制御動作の識別}{section.3.4}% 42
-\BOOKMARK [2][-]{subsection.3.4.4}{Step 4: ロスシナリオの識別Step 4: ロスシナリオの識別}{section.3.4}% 43
-\BOOKMARK [1][-]{section.3.5}{まとめまとめ}{chapter.3}% 44
-\BOOKMARK [1][-]{section.3.6}{参考文献参考文献}{chapter.3}% 45
-\BOOKMARK [0][-]{chapter.4}{モデルベースシステムズエンジニアリングモデルベースシステムズエンジニアリング}{}% 46
-\BOOKMARK [1][-]{section.4.1}{システムエンジニアリングの基礎システムエンジニアリングの基礎}{chapter.4}% 47
-\BOOKMARK [2][-]{subsection.4.1.1}{システムエンジニアリングとはシステムエンジニアリングとは}{section.4.1}% 48
-\BOOKMARK [2][-]{subsection.4.1.2}{システムエンジニアリングの知見システムエンジニアリングの知見}{section.4.1}% 49
-\BOOKMARK [2][-]{subsection.4.1.3}{システムに関する概念の定義システムに関する概念の定義}{section.4.1}% 50
-\BOOKMARK [2][-]{subsection.4.1.4}{システムの開発や運用においてありうる活動の定義システムの開発や運用においてありうる活動の定義}{section.4.1}% 51
-\BOOKMARK [2][-]{subsection.4.1.5}{システムを記述するために必要な観点の提供システムを記述するために必要な観点の提供}{section.4.1}% 52
-\BOOKMARK [1][-]{section.4.2}{モデルベースドシステムズエンジニアリング（MBSE）モデルベースドシステムズエンジニアリング（MBSE）}{chapter.4}% 53
-\BOOKMARK [2][-]{subsection.4.2.1}{MBSEの概念MBSEの概念}{section.4.2}% 54
-\BOOKMARK [2][-]{subsection.4.2.2}{SysML（Systems Modeling Language）SysML（Systems Modeling Language）}{section.4.2}% 55
-\BOOKMARK [1][-]{section.4.3}{SysMLを用いたシステムモデリングSysMLを用いたシステムモデリング}{chapter.4}% 56
-\BOOKMARK [2][-]{subsection.4.3.1}{構造のモデリング構造のモデリング}{section.4.3}% 57
-\BOOKMARK [2][-]{subsection.4.3.2}{振る舞いのモデリング振る舞いのモデリング}{section.4.3}% 58
-\BOOKMARK [2][-]{subsection.4.3.3}{パラメータ間の関係のモデリングパラメータ間の関係のモデリング}{section.4.3}% 59
-\BOOKMARK [2][-]{subsection.4.3.4}{要求のモデリング要求のモデリング}{section.4.3}% 60
-\BOOKMARK [1][-]{section.4.4}{トレードオフ分析トレードオフ分析}{chapter.4}% 61
-\BOOKMARK [2][-]{subsection.4.4.1}{トレードオフ分析の概要トレードオフ分析の概要}{section.4.4}% 62
-\BOOKMARK [2][-]{subsection.4.4.2}{記述型モデルと分析型モデルの連携記述型モデルと分析型モデルの連携}{section.4.4}% 63
-\BOOKMARK [2][-]{subsection.4.4.3}{トレードオフ分析の手順トレードオフ分析の手順}{section.4.4}% 64
-\BOOKMARK [1][-]{section.4.5}{事例研究: 自動駐車システム事例研究: 自動駐車システム}{chapter.4}% 65
-\BOOKMARK [2][-]{subsection.4.5.1}{システム概要システム概要}{section.4.5}% 66
-\BOOKMARK [2][-]{subsection.4.5.2}{能力の定義と評価指標能力の定義と評価指標}{section.4.5}% 67
-\BOOKMARK [2][-]{subsection.4.5.3}{リソースアーキテクチャの検討リソースアーキテクチャの検討}{section.4.5}% 68
-\BOOKMARK [2][-]{subsection.4.5.4}{分析ケースの定義分析ケースの定義}{section.4.5}% 69
-\BOOKMARK [2][-]{subsection.4.5.5}{シミュレーションと分析シミュレーションと分析}{section.4.5}% 70
-\BOOKMARK [2][-]{subsection.4.5.6}{結果の評価とトレードオフ分析結果の評価とトレードオフ分析}{section.4.5}% 71
-\BOOKMARK [1][-]{section.4.6}{まとめまとめ}{chapter.4}% 72
-\BOOKMARK [0][-]{chapter.5}{アシュアランスケースとGSNアシュアランスケースとGSN}{}% 73
-\BOOKMARK [1][-]{section.5.1}{アシュアランスケースとはアシュアランスケースとは}{chapter.5}% 74
-\BOOKMARK [1][-]{section.5.2}{MISRA Safety Case GuidelineMISRA Safety Case Guideline}{chapter.5}% 75
-\BOOKMARK [1][-]{section.5.3}{セーフティケースの重要性セーフティケースの重要性}{chapter.5}% 76
-\BOOKMARK [1][-]{section.5.4}{D-Caseの概要と基本原則D-Caseの概要と基本原則}{chapter.5}% 77
-\BOOKMARK [2][-]{subsection.5.4.1}{D-CaseとはD-Caseとは}{section.5.4}% 78
-\BOOKMARK [1][-]{section.5.5}{D-Caseの目的: ミニマムの合意形成D-Caseの目的: ミニマムの合意形成}{chapter.5}% 79
-\BOOKMARK [2][-]{subsection.5.5.1}{D-Caseの基本的な考え方D-Caseの基本的な考え方}{section.5.5}% 80
-\BOOKMARK [1][-]{section.5.6}{GSN（Goal Structuring Notation）GSN（Goal Structuring Notation）}{chapter.5}% 81
-\BOOKMARK [2][-]{subsection.5.6.1}{GSNの概要GSNの概要}{section.5.6}% 82
-\BOOKMARK [1][-]{section.5.7}{GSNの基本要素GSNの基本要素}{chapter.5}% 83
-\BOOKMARK [2][-]{subsection.5.7.1}{GSNのノード接続ルールGSNのノード接続ルール}{section.5.7}% 84
-\BOOKMARK [2][-]{subsection.5.7.2}{GSNの作成例GSNの作成例}{section.5.7}% 85
-\BOOKMARK [1][-]{section.5.8}{D-CaseステップD-Caseステップ}{chapter.5}% 86
-\BOOKMARK [2][-]{subsection.5.8.1}{D-Caseステップの概要D-Caseステップの概要}{section.5.8}% 87
-\BOOKMARK [2][-]{subsection.5.8.2}{ステップ1：ステークホルダの設定ステップ1：ステークホルダの設定}{section.5.8}% 88
-\BOOKMARK [2][-]{subsection.5.8.3}{ステップ2：D-Caseの記述ステップ2：D-Caseの記述}{section.5.8}% 89
-\BOOKMARK [2][-]{subsection.5.8.4}{ステップ3：合意形成の実施ステップ3：合意形成の実施}{section.5.8}% 90
-\BOOKMARK [2][-]{subsection.5.8.5}{D-Caseの評価基準D-Caseの評価基準}{section.5.8}% 91
-\BOOKMARK [1][-]{section.5.9}{事例紹介：自動運転システム事例紹介：自動運転システム}{chapter.5}% 92
-\BOOKMARK [2][-]{subsection.5.9.1}{レベル4自動運転システムの事例レベル4自動運転システムの事例}{section.5.9}% 93
-\BOOKMARK [2][-]{subsection.5.9.2}{継続的アシュアランスの重要性継続的アシュアランスの重要性}{section.5.9}% 94
-\BOOKMARK [2][-]{subsection.5.9.3}{アシュアランスケースのトップレベル構造アシュアランスケースのトップレベル構造}{section.5.9}% 95
-\BOOKMARK [2][-]{subsection.5.9.4}{特定のユースケースの妥当性検証特定のユースケースの妥当性検証}{section.5.9}% 96
-\BOOKMARK [1][-]{section.5.10}{まとめまとめ}{chapter.5}% 97
-\BOOKMARK [1][-]{section.5.11}{D-Caseの実践演習：スマート内覧システムD-Caseの実践演習：スマート内覧システム}{chapter.5}% 98
-\BOOKMARK [2][-]{subsection.5.11.1}{演習の概要演習の概要}{section.5.11}% 99
-\BOOKMARK [2][-]{subsection.5.11.2}{テーマ：スマート内覧システムテーマ：スマート内覧システム}{section.5.11}% 100
-\BOOKMARK [2][-]{subsection.5.11.3}{ステップ1：ステークホルダ分析ステップ1：ステークホルダ分析}{section.5.11}% 101
-\BOOKMARK [2][-]{subsection.5.11.4}{ステップ2：D-Caseの記述ステップ2：D-Caseの記述}{section.5.11}% 102
-\BOOKMARK [2][-]{subsection.5.11.5}{ステップ3：合意形成の実施ステップ3：合意形成の実施}{section.5.11}% 103
-\BOOKMARK [2][-]{subsection.5.11.6}{D-Caseの評価D-Caseの評価}{section.5.11}% 104
-\BOOKMARK [2][-]{subsection.5.11.7}{演習課題演習課題}{section.5.11}% 105
-\BOOKMARK [0][-]{chapter.6}{総合演習：自動運転システムの信頼性分析総合演習：自動運転システムの信頼性分析}{}% 106
-\BOOKMARK [1][-]{section.6.1}{演習の概要演習の概要}{chapter.6}% 107
-\BOOKMARK [2][-]{subsection.6.1.1}{対象システム対象システム}{section.6.1}% 108
-\BOOKMARK [2][-]{subsection.6.1.2}{想定シナリオ想定シナリオ}{section.6.1}% 109
-\BOOKMARK [2][-]{subsection.6.1.3}{目指す安全状態目指す安全状態}{section.6.1}% 110
-\BOOKMARK [1][-]{section.6.2}{システム要素の概要システム要素の概要}{chapter.6}% 111
-\BOOKMARK [2][-]{subsection.6.2.1}{Localization（位置推定のためのセンシングシステム）Localization（位置推定のためのセンシングシステム）}{section.6.2}% 112
-\BOOKMARK [2][-]{subsection.6.2.2}{Environmental Perception Sensor（物標検知のためのセンシングシステム）Environmental Perception Sensor（物標検知のためのセンシングシステム）}{section.6.2}% 113
-\BOOKMARK [2][-]{subsection.6.2.3}{Interpretation and Prediction（解釈と予測システム）Interpretation and Prediction（解釈と予測システム）}{section.6.2}% 114
-\BOOKMARK [2][-]{subsection.6.2.4}{Driving Planning（運転計画システム）Driving Planning（運転計画システム）}{section.6.2}% 115
-\BOOKMARK [2][-]{subsection.6.2.5}{ADS Mode Manager（自動運転モード管理システム）ADS Mode Manager（自動運転モード管理システム）}{section.6.2}% 116
-\BOOKMARK [2][-]{subsection.6.2.6}{User State Determination（ユーザー状態決定システム）User State Determination（ユーザー状態決定システム）}{section.6.2}% 117
-\BOOKMARK [2][-]{subsection.6.2.7}{Monitors（監視システム）Monitors（監視システム）}{section.6.2}% 118
-\BOOKMARK [1][-]{section.6.3}{STAMP/STPAによる安全分析の手順STAMP/STPAによる安全分析の手順}{chapter.6}% 119
-\BOOKMARK [1][-]{section.6.4}{演習課題演習課題}{chapter.6}% 120
-\BOOKMARK [2][-]{subsection.6.4.1}{ロス（アクシデント）とハザードの識別ロス（アクシデント）とハザードの識別}{section.6.4}% 121
-\BOOKMARK [2][-]{subsection.6.4.2}{制御構造図のモデル化制御構造図のモデル化}{section.6.4}% 122
-\BOOKMARK [2][-]{subsection.6.4.3}{非安全制御動作（UCA）の識別非安全制御動作（UCA）の識別}{section.6.4}% 123
-\BOOKMARK [2][-]{subsection.6.4.4}{ロスシナリオの識別ロスシナリオの識別}{section.6.4}% 124
-\BOOKMARK [1][-]{section.6.5}{レポート作成レポート作成}{chapter.6}% 125
-\BOOKMARK [1][-]{section.6.6}{MBSEによるアーキテクチャ設計MBSEによるアーキテクチャ設計}{chapter.6}% 126
-\BOOKMARK [2][-]{subsection.6.6.1}{MBSEモデリングの手順MBSEモデリングの手順}{section.6.6}% 127
-\BOOKMARK [2][-]{subsection.6.6.2}{MBSEモデリングの補足MBSEモデリングの補足}{section.6.6}% 128
-\BOOKMARK [1][-]{section.6.7}{アシュアランスケースによるシステム保証アシュアランスケースによるシステム保証}{chapter.6}% 129
-\BOOKMARK [2][-]{subsection.6.7.1}{演習1: ステークホルダーの分析演習1: ステークホルダーの分析}{section.6.7}% 130
-\BOOKMARK [2][-]{subsection.6.7.2}{演習2: 前提とトップゴールの設定演習2: 前提とトップゴールの設定}{section.6.7}% 131
-\BOOKMARK [2][-]{subsection.6.7.3}{演習3: サブゴールへの分割演習3: サブゴールへの分割}{section.6.7}% 132
-\BOOKMARK [1][-]{section.6.8}{まとめまとめ}{chapter.6}% 133
-\BOOKMARK [1][-]{section.6.9}{総合演習の課題2総合演習の課題2}{chapter.6}% 134
-\BOOKMARK [0][-]{chapter.7}{まとめまとめ}{}% 135
-\BOOKMARK [0][-]{chapter*.4}{引用・参考文献}{}% 136
+\BOOKMARK [2][-]{subsection.1.3.2}{オープンシステム（開放系）の問題オープンシステム（開放系）の問題}{section.1.3}% 11
+\BOOKMARK [1][-]{section.1.4}{これからのディペンダビリティに向けてこれからのディペンダビリティに向けて}{chapter.1}% 12
+\BOOKMARK [2][-]{subsection.1.4.1}{不完全・不確実なシステムへの対応不完全・不確実なシステムへの対応}{section.1.4}% 13
+\BOOKMARK [2][-]{subsection.1.4.2}{システム保証（System Assurance）の重要性システム保証（System Assurance）の重要性}{section.1.4}% 14
+\BOOKMARK [2][-]{subsection.1.4.3}{説明責任の必要性の高まり説明責任の必要性の高まり}{section.1.4}% 15
+\BOOKMARK [2][-]{subsection.1.4.4}{AI技術とディペンダビリティAI技術とディペンダビリティ}{section.1.4}% 16
+\BOOKMARK [0][-]{chapter.2}{安全分析の基本手法: FTAとFMEA安全分析の基本手法: FTAとFMEA}{}% 17
+\BOOKMARK [1][-]{section.2.1}{未然防止の手法未然防止の手法}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.2}{FTAとFMEAFTAとFMEA}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.3}{FTA\(Fault Tree Analysis、故障の木解析\)FTA\(Fault Tree Analysis、故障の木解析\)}{chapter.2}% 20
+\BOOKMARK [2][-]{subsection.2.3.1}{FT図を読むFT図を読む}{section.2.3}% 21
+\BOOKMARK [2][-]{subsection.2.3.2}{FT図の作成FT図の作成}{section.2.3}% 22
+\BOOKMARK [1][-]{section.2.4}{FT図で定量的に解析するFT図で定量的に解析する}{chapter.2}% 23
+\BOOKMARK [1][-]{section.2.5}{FT図で定性的に解析するFT図で定性的に解析する}{chapter.2}% 24
+\BOOKMARK [2][-]{subsection.2.5.1}{最小カット集合を利用した方法最小カット集合を利用した方法}{section.2.5}% 25
+\BOOKMARK [2][-]{subsection.2.5.2}{構造重要度を利用した方法構造重要度を利用した方法}{section.2.5}% 26
+\BOOKMARK [1][-]{section.2.6}{FTA実施上の留意点FTA実施上の留意点}{chapter.2}% 27
+\BOOKMARK [0][-]{chapter.3}{安全分析手法STAMP/STPA安全分析手法STAMP/STPA}{}% 28
+\BOOKMARK [1][-]{section.3.1}{STAMPの概要STAMPの概要}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.2}{STPASTPA}{chapter.3}% 30
+\BOOKMARK [2][-]{subsection.3.2.1}{STPAの手順STPAの手順}{section.3.2}% 31
+\BOOKMARK [2][-]{subsection.3.2.2}{Step 1: 分析目的の定義Step 1: 分析目的の定義}{section.3.2}% 32
+\BOOKMARK [2][-]{subsection.3.2.3}{Step 2: 安全制御構造図のモデル化Step 2: 安全制御構造図のモデル化}{section.3.2}% 33
+\BOOKMARK [2][-]{subsection.3.2.4}{Step 3: 非安全制御動作の識別Step 3: 非安全制御動作の識別}{section.3.2}% 34
+\BOOKMARK [2][-]{subsection.3.2.5}{Step 4: ロスシナリオの識別Step 4: ロスシナリオの識別}{section.3.2}% 35
+\BOOKMARK [1][-]{section.3.3}{脅威分析手法 STPA-Sec脅威分析手法 STPA-Sec}{chapter.3}% 36
+\BOOKMARK [2][-]{subsection.3.3.1}{ウォーゲーム\(Wargaming\)ウォーゲーム\(Wargaming\)}{section.3.3}% 37
+\BOOKMARK [1][-]{section.3.4}{事例研究: 自動運転システムへのSTPAの適用事例研究: 自動運転システムへのSTPAの適用}{chapter.3}% 38
+\BOOKMARK [2][-]{subsection.3.4.1}{Step 1: 分析目的の定義Step 1: 分析目的の定義}{section.3.4}% 39
+\BOOKMARK [2][-]{subsection.3.4.2}{Step 2: 制御構造図のモデル化Step 2: 制御構造図のモデル化}{section.3.4}% 40
+\BOOKMARK [2][-]{subsection.3.4.3}{Step 3: 非安全制御動作の識別Step 3: 非安全制御動作の識別}{section.3.4}% 41
+\BOOKMARK [2][-]{subsection.3.4.4}{Step 4: ロスシナリオの識別Step 4: ロスシナリオの識別}{section.3.4}% 42
+\BOOKMARK [1][-]{section.3.5}{まとめまとめ}{chapter.3}% 43
+\BOOKMARK [1][-]{section.3.6}{参考文献参考文献}{chapter.3}% 44
+\BOOKMARK [0][-]{chapter.4}{モデルベースシステムズエンジニアリングモデルベースシステムズエンジニアリング}{}% 45
+\BOOKMARK [1][-]{section.4.1}{システムエンジニアリングの基礎システムエンジニアリングの基礎}{chapter.4}% 46
+\BOOKMARK [2][-]{subsection.4.1.1}{システムエンジニアリングとはシステムエンジニアリングとは}{section.4.1}% 47
+\BOOKMARK [2][-]{subsection.4.1.2}{システムエンジニアリングの知見システムエンジニアリングの知見}{section.4.1}% 48
+\BOOKMARK [2][-]{subsection.4.1.3}{システムに関する概念の定義システムに関する概念の定義}{section.4.1}% 49
+\BOOKMARK [2][-]{subsection.4.1.4}{システムの開発や運用においてありうる活動の定義システムの開発や運用においてありうる活動の定義}{section.4.1}% 50
+\BOOKMARK [2][-]{subsection.4.1.5}{システムを記述するために必要な観点の提供システムを記述するために必要な観点の提供}{section.4.1}% 51
+\BOOKMARK [1][-]{section.4.2}{モデルベースドシステムズエンジニアリング（MBSE）モデルベースドシステムズエンジニアリング（MBSE）}{chapter.4}% 52
+\BOOKMARK [2][-]{subsection.4.2.1}{MBSEの概念MBSEの概念}{section.4.2}% 53
+\BOOKMARK [2][-]{subsection.4.2.2}{SysML（Systems Modeling Language）SysML（Systems Modeling Language）}{section.4.2}% 54
+\BOOKMARK [1][-]{section.4.3}{SysMLを用いたシステムモデリングSysMLを用いたシステムモデリング}{chapter.4}% 55
+\BOOKMARK [2][-]{subsection.4.3.1}{構造のモデリング構造のモデリング}{section.4.3}% 56
+\BOOKMARK [2][-]{subsection.4.3.2}{振る舞いのモデリング振る舞いのモデリング}{section.4.3}% 57
+\BOOKMARK [2][-]{subsection.4.3.3}{パラメータ間の関係のモデリングパラメータ間の関係のモデリング}{section.4.3}% 58
+\BOOKMARK [2][-]{subsection.4.3.4}{要求のモデリング要求のモデリング}{section.4.3}% 59
+\BOOKMARK [1][-]{section.4.4}{トレードオフ分析トレードオフ分析}{chapter.4}% 60
+\BOOKMARK [2][-]{subsection.4.4.1}{トレードオフ分析の概要トレードオフ分析の概要}{section.4.4}% 61
+\BOOKMARK [2][-]{subsection.4.4.2}{記述型モデルと分析型モデルの連携記述型モデルと分析型モデルの連携}{section.4.4}% 62
+\BOOKMARK [2][-]{subsection.4.4.3}{トレードオフ分析の手順トレードオフ分析の手順}{section.4.4}% 63
+\BOOKMARK [1][-]{section.4.5}{事例研究: 自動駐車システム事例研究: 自動駐車システム}{chapter.4}% 64
+\BOOKMARK [2][-]{subsection.4.5.1}{システム概要システム概要}{section.4.5}% 65
+\BOOKMARK [2][-]{subsection.4.5.2}{能力の定義と評価指標能力の定義と評価指標}{section.4.5}% 66
+\BOOKMARK [2][-]{subsection.4.5.3}{リソースアーキテクチャの検討リソースアーキテクチャの検討}{section.4.5}% 67
+\BOOKMARK [2][-]{subsection.4.5.4}{分析ケースの定義分析ケースの定義}{section.4.5}% 68
+\BOOKMARK [2][-]{subsection.4.5.5}{シミュレーションと分析シミュレーションと分析}{section.4.5}% 69
+\BOOKMARK [2][-]{subsection.4.5.6}{結果の評価とトレードオフ分析結果の評価とトレードオフ分析}{section.4.5}% 70
+\BOOKMARK [1][-]{section.4.6}{まとめまとめ}{chapter.4}% 71
+\BOOKMARK [0][-]{chapter.5}{アシュアランスケースとGSNアシュアランスケースとGSN}{}% 72
+\BOOKMARK [1][-]{section.5.1}{アシュアランスケースとはアシュアランスケースとは}{chapter.5}% 73
+\BOOKMARK [1][-]{section.5.2}{セーフティケースの重要性セーフティケースの重要性}{chapter.5}% 74
+\BOOKMARK [1][-]{section.5.3}{D-Caseの概要と基本原則D-Caseの概要と基本原則}{chapter.5}% 75
+\BOOKMARK [2][-]{subsection.5.3.1}{D-CaseとはD-Caseとは}{section.5.3}% 76
+\BOOKMARK [1][-]{section.5.4}{D-Caseの目的: ミニマムの合意形成D-Caseの目的: ミニマムの合意形成}{chapter.5}% 77
+\BOOKMARK [2][-]{subsection.5.4.1}{D-Caseの基本的な考え方D-Caseの基本的な考え方}{section.5.4}% 78
+\BOOKMARK [1][-]{section.5.5}{GSN（Goal Structuring Notation）GSN（Goal Structuring Notation）}{chapter.5}% 79
+\BOOKMARK [2][-]{subsection.5.5.1}{GSNの概要GSNの概要}{section.5.5}% 80
+\BOOKMARK [1][-]{section.5.6}{GSNの基本要素GSNの基本要素}{chapter.5}% 81
+\BOOKMARK [2][-]{subsection.5.6.1}{GSNのノード接続ルールGSNのノード接続ルール}{section.5.6}% 82
+\BOOKMARK [2][-]{subsection.5.6.2}{GSNの作成例GSNの作成例}{section.5.6}% 83
+\BOOKMARK [1][-]{section.5.7}{D-CaseステップD-Caseステップ}{chapter.5}% 84
+\BOOKMARK [2][-]{subsection.5.7.1}{D-Caseステップの概要D-Caseステップの概要}{section.5.7}% 85
+\BOOKMARK [2][-]{subsection.5.7.2}{ステップ1：ステークホルダの設定ステップ1：ステークホルダの設定}{section.5.7}% 86
+\BOOKMARK [2][-]{subsection.5.7.3}{ステップ2：D-Caseの記述ステップ2：D-Caseの記述}{section.5.7}% 87
+\BOOKMARK [2][-]{subsection.5.7.4}{ステップ3：合意形成の実施ステップ3：合意形成の実施}{section.5.7}% 88
+\BOOKMARK [2][-]{subsection.5.7.5}{D-Caseの評価基準D-Caseの評価基準}{section.5.7}% 89
+\BOOKMARK [1][-]{section.5.8}{事例紹介：自動運転システム事例紹介：自動運転システム}{chapter.5}% 90
+\BOOKMARK [2][-]{subsection.5.8.1}{レベル4自動運転システムの事例レベル4自動運転システムの事例}{section.5.8}% 91
+\BOOKMARK [2][-]{subsection.5.8.2}{継続的アシュアランスの重要性継続的アシュアランスの重要性}{section.5.8}% 92
+\BOOKMARK [2][-]{subsection.5.8.3}{アシュアランスケースのトップレベル構造アシュアランスケースのトップレベル構造}{section.5.8}% 93
+\BOOKMARK [2][-]{subsection.5.8.4}{特定のユースケースの妥当性検証特定のユースケースの妥当性検証}{section.5.8}% 94
+\BOOKMARK [1][-]{section.5.9}{まとめまとめ}{chapter.5}% 95
+\BOOKMARK [1][-]{section.5.10}{D-Caseの実践演習：スマート内覧システムD-Caseの実践演習：スマート内覧システム}{chapter.5}% 96
+\BOOKMARK [2][-]{subsection.5.10.1}{演習の概要演習の概要}{section.5.10}% 97
+\BOOKMARK [2][-]{subsection.5.10.2}{テーマ：スマート内覧システムテーマ：スマート内覧システム}{section.5.10}% 98
+\BOOKMARK [2][-]{subsection.5.10.3}{ステップ1：ステークホルダ分析ステップ1：ステークホルダ分析}{section.5.10}% 99
+\BOOKMARK [2][-]{subsection.5.10.4}{ステップ2：D-Caseの記述ステップ2：D-Caseの記述}{section.5.10}% 100
+\BOOKMARK [2][-]{subsection.5.10.5}{ステップ3：合意形成の実施ステップ3：合意形成の実施}{section.5.10}% 101
+\BOOKMARK [2][-]{subsection.5.10.6}{D-Caseの評価D-Caseの評価}{section.5.10}% 102
+\BOOKMARK [2][-]{subsection.5.10.7}{演習課題演習課題}{section.5.10}% 103
+\BOOKMARK [0][-]{chapter.6}{総合演習：自動運転システムの信頼性分析総合演習：自動運転システムの信頼性分析}{}% 104
+\BOOKMARK [1][-]{section.6.1}{演習の概要演習の概要}{chapter.6}% 105
+\BOOKMARK [2][-]{subsection.6.1.1}{対象システム対象システム}{section.6.1}% 106
+\BOOKMARK [2][-]{subsection.6.1.2}{想定シナリオ想定シナリオ}{section.6.1}% 107
+\BOOKMARK [2][-]{subsection.6.1.3}{目指す安全状態目指す安全状態}{section.6.1}% 108
+\BOOKMARK [1][-]{section.6.2}{システム要素の概要システム要素の概要}{chapter.6}% 109
+\BOOKMARK [2][-]{subsection.6.2.1}{Localization（位置推定のためのセンシングシステム）Localization（位置推定のためのセンシングシステム）}{section.6.2}% 110
+\BOOKMARK [2][-]{subsection.6.2.2}{Environmental Perception Sensor（物標検知のためのセンシングシステム）Environmental Perception Sensor（物標検知のためのセンシングシステム）}{section.6.2}% 111
+\BOOKMARK [2][-]{subsection.6.2.3}{Interpretation and Prediction（解釈と予測システム）Interpretation and Prediction（解釈と予測システム）}{section.6.2}% 112
+\BOOKMARK [2][-]{subsection.6.2.4}{Driving Planning（運転計画システム）Driving Planning（運転計画システム）}{section.6.2}% 113
+\BOOKMARK [2][-]{subsection.6.2.5}{ADS Mode Manager（自動運転モード管理システム）ADS Mode Manager（自動運転モード管理システム）}{section.6.2}% 114
+\BOOKMARK [2][-]{subsection.6.2.6}{User State Determination（ユーザー状態決定システム）User State Determination（ユーザー状態決定システム）}{section.6.2}% 115
+\BOOKMARK [2][-]{subsection.6.2.7}{Monitors（監視システム）Monitors（監視システム）}{section.6.2}% 116
+\BOOKMARK [1][-]{section.6.3}{STAMP/STPAによる安全分析の手順STAMP/STPAによる安全分析の手順}{chapter.6}% 117
+\BOOKMARK [1][-]{section.6.4}{演習課題演習課題}{chapter.6}% 118
+\BOOKMARK [2][-]{subsection.6.4.1}{ロス（アクシデント）とハザードの識別ロス（アクシデント）とハザードの識別}{section.6.4}% 119
+\BOOKMARK [2][-]{subsection.6.4.2}{制御構造図のモデル化制御構造図のモデル化}{section.6.4}% 120
+\BOOKMARK [2][-]{subsection.6.4.3}{非安全制御動作（UCA）の識別非安全制御動作（UCA）の識別}{section.6.4}% 121
+\BOOKMARK [2][-]{subsection.6.4.4}{ロスシナリオの識別ロスシナリオの識別}{section.6.4}% 122
+\BOOKMARK [1][-]{section.6.5}{レポート作成レポート作成}{chapter.6}% 123
+\BOOKMARK [1][-]{section.6.6}{MBSEによるアーキテクチャ設計MBSEによるアーキテクチャ設計}{chapter.6}% 124
+\BOOKMARK [2][-]{subsection.6.6.1}{MBSEモデリングの手順MBSEモデリングの手順}{section.6.6}% 125
+\BOOKMARK [2][-]{subsection.6.6.2}{MBSEモデリングの補足MBSEモデリングの補足}{section.6.6}% 126
+\BOOKMARK [1][-]{section.6.7}{アシュアランスケースによるシステム保証アシュアランスケースによるシステム保証}{chapter.6}% 127
+\BOOKMARK [2][-]{subsection.6.7.1}{演習1: ステークホルダーの分析演習1: ステークホルダーの分析}{section.6.7}% 128
+\BOOKMARK [2][-]{subsection.6.7.2}{演習2: 前提とトップゴールの設定演習2: 前提とトップゴールの設定}{section.6.7}% 129
+\BOOKMARK [2][-]{subsection.6.7.3}{演習3: サブゴールへの分割演習3: サブゴールへの分割}{section.6.7}% 130
+\BOOKMARK [1][-]{section.6.8}{まとめまとめ}{chapter.6}% 131
+\BOOKMARK [1][-]{section.6.9}{総合演習の課題2総合演習の課題2}{chapter.6}% 132
+\BOOKMARK [0][-]{chapter.7}{まとめまとめ}{}% 133
+\BOOKMARK [0][-]{chapter*.4}{引用・参考文献}{}% 134
