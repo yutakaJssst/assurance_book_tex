@@ -1,0 +1,189 @@
+\chapter{安全分析の基本手法：FTAとFMEA}
+\label{chap2}
+
+\section{はじめに}
+
+本書では、ディペンダビリティ（Dependability）の新しい潮流として、STAMP/STPA などの先進的安全分析手法や、システムズエンジニアリング、アシュアランスケースといった概念を取り入れ、複雑化・高度化するシステムにどう対処していくかを議論します。  
+しかしながら、これらの新たなアプローチを理解・活用するにあたっても、従来から用いられてきた\textbf{既存の安全分析手法}をしっかり押さえておくことは極めて重要です。そこで本章では以下の２つの手法を紹介します。
+
+\begin{itemize}
+ \item \textbf{FTA (Fault Tree Analysis)}：  
+   重大事故や障害をトップ事象とし、どのような要因の組み合わせで発生するかを論理ゲートを用いて可視化する「トップダウン型」手法。
+ \item \textbf{FMEA (Failure Mode and Effects Analysis)}：  
+   製品や工程の部品ごとに故障モードを洗い出し、それぞれがシステム全体に及ぼす影響を評価する「ボトムアップ型」手法。
+\end{itemize}
+
+これらはいずれも、システムや製品の\textbf{信頼性}・\textbf{安全性}を高めるうえで、長年にわたって活用されてきた「定番」の解析メソッドです。STAMP/STPA やアシュアランスケースといった新手法を導入する際にも、過去の事例や基準を踏まえたうえで、既存手法（FTA や FMEA）の成果物や解析結果を再利用したり、組み合わせたりするケースが非常に多いと考えられます。
+
+そこで本章では、まず\textbf{FTA} を取り上げ、その基本的な進め方や利点・留意点を解説し、その後、\textbf{FMEA} の概要を示します。これらの内容は、後続の章で扱うシステムズエンジニアリングやアシュアランスケース作成、あるいは STAMP/STPA の理解を深めるための基礎にもなるでしょう。
+
+\section{FTA (Fault Tree Analysis)}
+\label{sec:FTA}
+
+\subsection{FTA の概要と目的}
+
+FTA は、発生してはならない重大な故障や不具合を「トップ事象」に設定し、なぜそれが起こるのかを下位に向かって論理的に掘り下げる\textbf{トップダウン型}の手法です。1979 年のスリーマイル島原子力発電所事故の解析で有効性が示されたことを契機に、原子力、自動車、航空宇宙、一般的な製造業など幅広い分野に広まっています。
+
+\begin{itemize}
+ \item \textbf{特徴}：
+   \begin{itemize}
+    \item 木構造（故障の木）を用いて、視覚的に「なぜ起こるか」を整理
+    \item AND/OR ゲートで複数要因・並列要因を表現可能
+    \item 大事故や重大障害の原因を重点的に深掘りするのに適している
+   \end{itemize}
+ \item \textbf{注意点}：
+   \begin{itemize}
+    \item トップ事象の選定を誤ると見落としが生じる
+    \item システム全体の網羅的な故障モード抽出には、FMEA など他手法との併用が望ましい
+   \end{itemize}
+\end{itemize}
+
+\subsection{FTA の進め方}
+
+FTA は大きく以下の手順に従います。主に「故障の木 (FT 図) の作成」と「作成後の解析」の 2 段階です。
+
+\begin{enumerate}
+ \item \textbf{FTA 実施の準備}  
+   \begin{itemize}
+    \item 解析対象システムを熟知するエンジニアや品質保証担当者など、3--6 名程度のチームを編成
+    \item 関連設計資料・図面・クレーム情報などを集める
+   \end{itemize}
+
+ \item \textbf{解析対象の機能の理解}  
+   \begin{itemize}
+    \item 対象システムの構造・機能・使用環境・周辺システムとのインタフェースを共有
+   \end{itemize}
+
+ \item \textbf{トップ事象の選定}  
+   \begin{itemize}
+    \item 「明確に定義できる」「発生が望ましくない」「対策可能な要因が想定される」などの観点でトップ事象を決める
+    \item 例：\textbf{「エンジンが始動しない」「照明が点灯しない」「ブレーキが効かない」} など
+   \end{itemize}
+
+ \item \textbf{トップ事象の 1 次要因への展開}  
+   \begin{itemize}
+    \item トップ事象が起こる直接原因を OR/AND ゲート等で整理
+    \item 構成要素や機能的観点から、漏れなく候補を挙げる
+   \end{itemize}
+
+ \item \textbf{トップ事象の 2 次要因以下への展開}  
+   \begin{itemize}
+    \item さらに「なぜそうなるのか」を繰り返し、基本事象または非展開事象に至るまで木構造を描く
+    \item 要因の階層を揃え、曖昧な表現を避ける
+   \end{itemize}
+\end{enumerate}
+
+\subsection{FT 図を読む：記号とゲート}
+
+FTA では、\textbf{事象 (イベント)} を示す記号と、\textbf{論理ゲート} を使って因果関係を可視化します。
+
+\begin{itemize}
+ \item \textbf{イベント記号}：
+   \begin{itemize}
+    \item トップ事象（長方形）／中間事象（長方形）／基本事象（円）など
+   \end{itemize}
+ \item \textbf{論理ゲート}：
+   \begin{itemize}
+    \item AND ゲート：下位要因が「すべて発生」した場合に上位事象が成立
+    \item OR ゲート：下位要因の「いずれか 1 つが発生」した場合に上位事象が成立
+   \end{itemize}
+\end{itemize}
+
+\subsection{FT 図の定量的解析}
+
+FT 図を作成したら、以下の定量解析を行う場合があります。
+
+\begin{itemize}
+ \item \textbf{トップ事象の発生確率}：
+   \begin{itemize}
+    \item OR ゲート $\to$ 下位事象確率の和（近似）
+    \item AND ゲート $\to$ 下位事象確率の積（独立性前提）
+   \end{itemize}
+
+ \item \textbf{同一事象の排除}：
+   \begin{itemize}
+    \item 同じ基本事象が複数箇所に重複する際、定量計算時には一つにまとめるなど配慮が必要
+   \end{itemize}
+
+ \item \textbf{重要事象の抽出}：
+   \begin{itemize}
+    \item OR ゲート配下では、確率が高い事象から優先的に対策
+    \item AND ゲートを含む複合形状では別の分析手段（最小カット集合など）と併用
+   \end{itemize}
+\end{itemize}
+
+\subsection{FT 図の定性的解析}
+
+発生確率の情報がない、あるいは推定困難な場合には、定性的な方法で「主要な要因」を特定することが可能です。
+
+\begin{itemize}
+ \item \textbf{最小カット集合 (Minimal Cut Sets)}：
+   \begin{itemize}
+    \item トップ事象を発生させる「最小限の基本事象の組み合わせ」を抽出
+    \item 共通して含まれる基本事象があれば、そこを対策することでトップ事象発生を大きく防止可能
+   \end{itemize}
+
+ \item \textbf{構造重要度 (Structure Importance)}：
+   \begin{itemize}
+    \item ある基本事象が故障／正常化したときにトップ事象の発生パターンがどれくらい変化するかを計算
+    \item トップ事象の回避への寄与度が高い基本事象を抽出する
+   \end{itemize}
+\end{itemize}
+
+\subsection{FTA 実施上の留意点}
+
+\begin{itemize}
+ \item \textbf{全ての基本事象の発生確率把握は難しい}  
+   \begin{itemize}
+    \item 信頼性データが乏しい場合、定性的評価や他手法との併用が有効
+   \end{itemize}
+
+ \item \textbf{創発故障や相互作用に注意}  
+   \begin{itemize}
+    \item 単に構造分割するだけでなく、機能の流れや外部環境の影響も考慮
+   \end{itemize}
+
+ \item \textbf{動的変化を扱いにくい}  
+   \begin{itemize}
+    \item FTA は基本的に静的モデルであり、時間依存のリスク変化には別途検討が必要
+   \end{itemize}
+
+ \item \textbf{事後解析でも有効}  
+   \begin{itemize}
+    \item 実際に発生した故障・事故の原因を特定し、最小カット集合などで要因を絞る手段としても活用される
+   \end{itemize}
+\end{itemize}
+
+\section{FMEA (Failure Mode and Effects Analysis)}
+\label{sec:FMEA}
+
+続いて、FMEA について簡単に紹介します。FMEA は \textbf{ボトムアップ型} で故障モードを分析する手法であり、FTA と組み合わせることで、システム全体の安全分析をより強固にする狙いがあります。  
+本書では後の章で扱う STAMP/STPA やアシュアランスケースとも対比しながら、従来手法との使い分け・組み合わせを検討します。
+
+\subsection{FMEA の概要と目的}
+
+\begin{itemize}
+ \item 故障モード (Failure Mode) を部品・工程レベルから列挙し、それが上位システムへ及ぼす影響 (Effects) を評価する未然防止手法
+ \item NASA での宇宙開発プロジェクトや自動車、家電、医療機器など多様な領域で実績がある
+\end{itemize}
+
+\subsection{FMEA の進め方 (概略)}
+
+\begin{enumerate}
+ \item \textbf{準備とチーム編成}
+ \item \textbf{解析対象の機能・構造把握}
+ \item \textbf{故障モードの抽出}
+ \item \textbf{影響評価 (Severity / Occurrence / Detection) と優先度 (RPN)}
+ \item \textbf{対策検討とフォローアップ}
+\end{enumerate}
+
+\subsection{FMEA の利用事例とまとめ}
+
+\begin{itemize}
+ \item \textbf{工程 FMEA}：製造工程や組立工程における不良モードを系統的に洗い出す
+ \item \textbf{設計 FMEA}：製品の詳細設計時に、部品・サブシステムの故障モードを網羅し、上位への影響を検討
+ \item これらの\textbf{FMEA} と \textbf{FTA} を組み合わせることで、網羅性（FMEA）と重大事象の重点把握（FTA）が両立できる
+\end{itemize}
+
+% end of chapter
+
